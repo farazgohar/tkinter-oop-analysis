@@ -38,3 +38,18 @@ Features:
 
 =========================================================
 """
+import tkinter as tk
+from tkinter import messagebox
+
+
+# =================================
+# Custom Window Extension
+# =================================
+class CustomWindow(tk.Tk):
+    def __init__(self):
+        super().__init__()
+
+        self.title("Tkinter OOP Extension Project")
+        self.geometry("500x350")
+        self.configure(bg="lightblue")
+

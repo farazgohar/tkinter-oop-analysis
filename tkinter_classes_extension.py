@@ -53,3 +53,17 @@ class CustomWindow(tk.Tk):
         self.geometry("500x350")
         self.configure(bg="lightblue")
 
+# =================================
+# Custom Frame Extension
+# =================================
+class CustomFrame(tk.Frame):
+    def __init__(self, parent):
+        super().__init__(
+            parent,
+            bg="white",
+            padx=20,
+            pady=20,
+            bd=3,
+            relief="ridge"
+        )
+

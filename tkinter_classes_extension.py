@@ -67,3 +67,15 @@ class CustomFrame(tk.Frame):
             relief="ridge"
         )
 
+# =================================
+# Custom Label Extension
+# =================================
+class CustomLabel(tk.Label):
+    def __init__(self, parent, text):
+        super().__init__(
+            parent,
+            text=text,
+            font=("Arial", 14, "bold"),
+            bg="white"
+        )
+

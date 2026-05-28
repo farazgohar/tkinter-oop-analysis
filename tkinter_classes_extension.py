@@ -79,3 +79,17 @@ class CustomLabel(tk.Label):
             bg="white"
         )
 
+# =================================
+# Custom Entry Extension
+# =================================
+class CustomEntry(tk.Entry):
+    def __init__(self, parent):
+        super().__init__(
+            parent,
+            width=30,
+            font=("Arial", 12)
+        )
+
+    def get_input(self):
+        return self.get()
+

@@ -93,3 +93,31 @@ class CustomEntry(tk.Entry):
     def get_input(self):
         return self.get()
 
+# =================================
+# Custom Button Extension
+# =================================
+class CustomButton(tk.Button):
+    def __init__(self, parent, entry):
+        super().__init__(
+            parent,
+            text="Submit",
+            bg="blue",
+            fg="white",
+            font=("Arial", 12, "bold"),
+            command=lambda: self.show_message(entry)
+        )
+
+    def show_message(self, entry):
+        user_text = entry.get_input()
+
+        if user_text.strip() == "":
+            messagebox.showwarning(
+                "Warning",
+                "Please enter your name"
+            )
+        else:
+            messagebox.showinfo(
+                "Success",
+                f"Welcome {user_text}"
+            )
+

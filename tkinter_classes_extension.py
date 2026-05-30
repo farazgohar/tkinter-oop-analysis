@@ -121,3 +121,26 @@ class CustomButton(tk.Button):
                 f"Welcome {user_text}"
             )
 
+# =================================
+# Main Application
+# =================================
+
+app = CustomWindow()
+
+frame = CustomFrame(app)
+frame.pack(pady=50)
+
+title = CustomLabel(
+    frame,
+    "Enter Your Name"
+)
+title.pack(pady=10)
+
+entry = CustomEntry(frame)
+entry.pack(pady=10)
+
+button = CustomButton(frame, entry)
+button.pack(pady=10)
+
+app.mainloop()
+

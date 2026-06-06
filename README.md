@@ -1,5 +1,12 @@
 # 🧠 Tkinter OOP Analysis Project
 
+## 🎥 Project Presentation
+👉 Presentation Video: https://youtu.be/UIy3640KAkQ?si=TWuecKVjP4fe6ycV
+
+This video contains the complete presentation and explanation of our Tkinter OOP Analysis Project.
+
+---
+
 ## 📌 Overview
 This project is a Final Term assignment for Object Oriented Programming.  
 We selected the Python library **Tkinter** and performed a complete OOP-based analysis of its internal structure, classes, and design principles.
@@ -21,16 +28,6 @@ Along with analysis, we also developed a custom extension using Tkinter to demon
 👉 **Tkinter (Python GUI Library)**
 
 Tkinter is Python’s standard GUI toolkit used for building desktop applications.
-
----
-
-## 🧩 Key Classes Analyzed
-- `Tk` → Main application window
-- `Frame` → Container widget
-- `Label` → Displays text/images
-- `Button` → Clickable button widget
-- `Entry` → Input field
-
 ---
 
 ## 🏗️ OOP Concepts Applied
